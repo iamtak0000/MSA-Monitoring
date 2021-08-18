@@ -24,7 +24,7 @@
 
 2. Application를 APM으로 모니터링 하기
 
-  # 스카우터 다운받기
+  #스카우터 다운로드
   wget https://github.com/scouter-project/scouter/releases/download/v2.12.0.1.SNAPSHOT/scouter-all-2.12.0.1.SNAPSHOT.tar.gz
   
   #압축 풀기
