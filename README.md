@@ -6,8 +6,12 @@
   sudo apt-get install openjdk-11-jdk
   
   git, wget command
+  
+  git clone https://github.com/iamtak0000/MSA-Monitoring.git
 
 1. SpringBoot로 Monolithic 기반 Application 시작하기
+
+  git push https://github.com/iamtak0000/MSA-Monitoring.git
 
 2. Application를 APM으로 모니터링 하기
 
