@@ -14,21 +14,26 @@
   git pull https://github.com/iamtak0000/MSA-Monitoring.git
   
   #압축 풀기
-  tar xvf example01.tar
+  
+	tar xvf example01.tar
   
   #실행 하기
-  ./mvnw spring-boot:run
+  
+	./mvnw spring-boot:run
   
   #확인하기
-  http://인스턴스IP:8080/hello
+  
+	http://인스턴스IP:8080/hello
 
 2. Application를 APM으로 모니터링 하기
 
   #스카우터 다운로드
-  wget https://github.com/scouter-project/scouter/releases/download/v2.12.0.1.SNAPSHOT/scouter-all-2.12.0.1.SNAPSHOT.tar.gz
+  
+	wget https://github.com/scouter-project/scouter/releases/download/v2.12.0.1.SNAPSHOT/scouter-all-2.12.0.1.SNAPSHOT.tar.gz
   
   #압축 풀기
-  tar -zxvf scouter-all-2.12.0.1.SNAPSHOT.tar.gz
+  
+	tar -zxvf scouter-all-2.12.0.1.SNAPSHOT.tar.gz
   
   #Application에 설정하기
   
@@ -42,14 +47,17 @@
   </configuration>
   
   #스카우터 시작하기(스카우터 서버)
-  /home/ubuntu/scouter/server/startup.sh
+  
+	/home/ubuntu/scouter/server/startup.sh
   
   #Application 시작하기
-  ./mvnw spring-boot:run
+  
+	./mvnw spring-boot:run
   
   #스카우터 클라이언트 설치(윈도우 기준)
-  https://github.com/scouter-project/scouter/releases
-  scouter.client.product-win32.win32.x86_64.zip 다운로드
+  
+	#다운로드
+	https://github.com/scouter-project/scouter/releases/scouter.client.product-win32.win32.x86_64.zip
   
   ##스카우터 클라이언트 시작(윈도우 기준)
   
