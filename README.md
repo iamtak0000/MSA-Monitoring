@@ -11,7 +11,16 @@
 
 1. SpringBoot로 Monolithic 기반 Application 시작하기
 
-  git push https://github.com/iamtak0000/MSA-Monitoring.git
+  git pull https://github.com/iamtak0000/MSA-Monitoring.git
+  
+  #압축 풀기
+  tar xvf example01.tar
+  
+  #실행 하기
+  ./mvnw spring-boot:run
+  
+  #확인하기
+  http://인스턴스IP:8080/hello
 
 2. Application를 APM으로 모니터링 하기
 
