@@ -69,10 +69,12 @@
 3. ab로 Application에 부하 주기
   
   #ab 설치하기
-  sudo apt-get install apache2-utils
+  
+  	sudo apt-get install apache2-utils
   
   #ab 실행하기
-  ab -n 500 -c 10 http://133.186.223.100:8080/hello
+  
+  	ab -n 500 -c 10 http://133.186.223.100:8080/hello
 
 4. Application를 Prometheus로 모니터링 하기
 
