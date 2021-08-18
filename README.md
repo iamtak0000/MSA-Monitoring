@@ -3,7 +3,7 @@
 사전에 할 일.
   OS : Ubuntu 18
   
-  Java를 설치해 주세요. -> sudo apt-get install openjdk-11-jdk
+  sudo apt-get install openjdk-11-jdk
   
   git, wget command
 
