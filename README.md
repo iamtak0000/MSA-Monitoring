@@ -37,14 +37,14 @@
   
   #Application에 설정하기
   
-  <artifactId>spring-boot-maven-plugin</artifactId>
-  <configuration>
-    <jvmArguments>
-      -javaagent:/home/ubuntu/scouter/agent.java/scouter.agent.jar
-      -Dscouter.config=/home/ubuntu/scouter/agent.java/conf/scouter.conf
-      -Dobj_name=WAS-01
-    </jvmArguments>
-  </configuration>
+	  <artifactId>spring-boot-maven-plugin</artifactId>
+	  <configuration>
+	    <jvmArguments>
+	      -javaagent:/home/ubuntu/scouter/agent.java/scouter.agent.jar
+	      -Dscouter.config=/home/ubuntu/scouter/agent.java/conf/scouter.conf
+	      -Dobj_name=WAS-01
+	    </jvmArguments>
+	  </configuration>
   
   #스카우터 시작하기(스카우터 서버)
   
