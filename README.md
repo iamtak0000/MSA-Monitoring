@@ -1,6 +1,7 @@
 # MSA-Monitoring
 
 사전에 할 일.
+
   OS : Ubuntu 18
   
   sudo apt-get install openjdk-11-jdk
