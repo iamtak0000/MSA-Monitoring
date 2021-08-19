@@ -126,6 +126,34 @@
     		      tags:
       			application: ${spring.application.name}
 	
+	#Configuration prometheus.yml
+	
+	targets에 모니터링할 Spring Boot 애플리케이션 IP:Port 추가
+	
+		global:
+  		  scrape_interval: "15s"
+  		  evaluation_interval: "15s"
+		scrape_configs:
+		- job_name: "springboot"
+  		  metrics_path: "/actuator/prometheus"
+  		  static_configs:
+  		  - targets:
+    		    - "<my_spring_boot_app_ip>:<port>"
+		- job_name: "prometheus"
+  		  static_configs:
+  		  - targets:
+    	 	    - "localhost:9090"
+	#Run
+	
+		./prometheus
+	
+	#Grafana 설치
+	
+		wget https://dl.grafana.com/oss/release/grafana-6.7.2.linux-amd64.tar.gz
+		tar -zxvf grafana-6.7.2.linux-amd64.tar.gz
+		cd grafana-6.7.2
+		./bin/grafana-server
+	
 5. SpringBoot로 MSA 기반 Application 시작하기
 
 6. Application를 Jaeger로 모니터링 하기
