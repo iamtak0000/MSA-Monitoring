@@ -102,13 +102,14 @@
    #Application 설정 : pom.xml, application.yml
    
    	pom.xml
+	
 		<dependency>  
-     			<groupId>org.springframework.boot</groupId>  
-     			<artifactId>spring-boot-starter-actuator</artifactId>  
+     		  <groupId>org.springframework.boot</groupId>  
+     		  <artifactId>spring-boot-starter-actuator</artifactId>  
 		</dependency>  
 		<dependency>  
-     			<groupId>io.micrometer</groupId>  
-     			<artifactId>micrometer-registry-prometheus</artifactId>  
+     		  <groupId>io.micrometer</groupId>  
+     		  <artifactId>micrometer-registry-prometheus</artifactId>  
 		</dependency>	
 
 	application.yml
