@@ -46,7 +46,11 @@
 	tar -zxvf scouter-all-2.12.0.1.SNAPSHOT.tar.gz
   
   #Application에 설정하기
-  
+  	  
+	  vi /home/ubuntu/MSA-Monitoring/example01/pom.xml
+	  
+	  i
+	  
 	  <artifactId>spring-boot-maven-plugin</artifactId>
 	  <configuration>
 	    <jvmArguments>
@@ -55,7 +59,9 @@
 	      -Dobj_name=WAS-01
 	    </jvmArguments>
 	  </configuration>
-  
+  	  
+	  wq!
+	  
   #스카우터 시작하기(스카우터 서버)
   
 	/home/ubuntu/scouter/server/startup.sh
