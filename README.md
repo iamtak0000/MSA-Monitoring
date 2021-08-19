@@ -93,6 +93,38 @@
 
 4. Application를 Prometheus로 모니터링 하기
 
+   #Prometheus 설치하기
+   
+   	wget https://github.com/prometheus/prometheus/releases/download/v2.17.1/prometheus-2.17.1.linux-amd64.tar.gz
+	tar -xzf prometheus-2.17.1.linux-amd64.tar.gz
+	cd prometheus-2.17.1.linux-amd64
+   
+   #Application 설정 : pom.xml, application.yml
+   
+   	pom.xml
+	<dependency>  
+     		<groupId>org.springframework.boot</groupId>  
+     		<artifactId>spring-boot-starter-actuator</artifactId>  
+	</dependency>  
+	<dependency>  
+     		<groupId>io.micrometer</groupId>  
+     		<artifactId>micrometer-registry-prometheus</artifactId>  
+	</dependency>	
+
+	application.yml
+	
+	spring:
+  		application:
+    			name: my_spring_boot_app
+	management:
+  		endpoints:  
+    			web:
+      				exposure:
+        				include: "prometheus"
+  		metrics:
+    			tags:
+      				application: ${spring.application.name}
+	
 5. SpringBoot로 MSA 기반 Application 시작하기
 
 6. Application를 Jaeger로 모니터링 하기
