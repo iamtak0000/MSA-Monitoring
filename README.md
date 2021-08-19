@@ -102,28 +102,28 @@
    #Application 설정 : pom.xml, application.yml
    
    	pom.xml
-	<dependency>  
-     		<groupId>org.springframework.boot</groupId>  
-     		<artifactId>spring-boot-starter-actuator</artifactId>  
-	</dependency>  
-	<dependency>  
-     		<groupId>io.micrometer</groupId>  
-     		<artifactId>micrometer-registry-prometheus</artifactId>  
-	</dependency>	
+		<dependency>  
+     			<groupId>org.springframework.boot</groupId>  
+     			<artifactId>spring-boot-starter-actuator</artifactId>  
+		</dependency>  
+		<dependency>  
+     			<groupId>io.micrometer</groupId>  
+     			<artifactId>micrometer-registry-prometheus</artifactId>  
+		</dependency>	
 
 	application.yml
 	
-	spring:
-  		application:
-    			name: my_spring_boot_app
-	management:
-  		endpoints:  
-    			web:
-      				exposure:
-        				include: "prometheus"
-  		metrics:
-    			tags:
-      				application: ${spring.application.name}
+		spring:
+  		  application:
+    		    name: my_spring_boot_app
+		management:
+  		  endpoints:  
+    		    web:
+      		      exposure:
+        		include: "prometheus"
+  		  metrics:
+    		      tags:
+      			application: ${spring.application.name}
 	
 5. SpringBoot로 MSA 기반 Application 시작하기
 
