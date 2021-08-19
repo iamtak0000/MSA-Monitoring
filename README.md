@@ -6,6 +6,11 @@
   
   sudo apt-get install openjdk-11-jdk
   
+  #JAVA_HOME settings
+  
+	export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+	export PATH=$PATH:$JAVA_HOME/bin
+  
   git, wget command
   
   git clone https://github.com/iamtak0000/MSA-Monitoring.git
@@ -13,6 +18,7 @@
 1. SpringBoot로 Monolithic 기반 Application 시작하기
 
   git pull https://github.com/iamtak0000/MSA-Monitoring.git
+  
   
   #압축 풀기
   
