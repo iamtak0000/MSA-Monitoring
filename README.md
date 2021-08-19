@@ -7,7 +7,10 @@
   sudo apt-get install openjdk-11-jdk
   
   #JAVA_HOME settings
-  
+  	
+	cd
+	vi .profile
+	
 	export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 	export PATH=$PATH:$JAVA_HOME/bin
   
